@@ -7,11 +7,11 @@ const ALCHEMY_MAINNET_API_KEY_URL = process.env.ALCHEMY_MAINNET_API_KEY_URL;
 const config: HardhatUserConfig = {
   solidity: "0.8.24",
   networks: {
-    hardhat: {
-      forking: {
-        url: ALCHEMY_MAINNET_API_KEY_URL!,
-      }
-    },
+    // hardhat: {
+    //   forking: {
+    //     url: ALCHEMY_MAINNET_API_KEY_URL!,
+    //   }
+    // },
     // for testnet
     "lisk-sepolia": {
       url: process.env.LISK_RPC_URL!,
